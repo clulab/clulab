@@ -1,4 +1,4 @@
 # This has been added specifically for the clulab.
--Djava.io.tmpdir=~/sbttmp
--ivy ~/sbtivy
+-Djava.io.tmpdir=$HOME/sbttmp
+-ivy $HOME/sbtivy
 

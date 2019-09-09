@@ -181,8 +181,9 @@ do
   if [[ $sawIvy == "true" ]]; then
     sawIvy=false
     if [ ! -e "$arg" ]; then
+      echo "Readying $arg for clulab..."
       mkdir -p "$arg"
-      cp /etc/profile.d/sbt-README.ivy "${arg}/README"
+      cp /etc/sbt/sbt-ivy-README.txt "${arg}/README"
     fi
   else
     case "$arg" in
@@ -190,8 +191,9 @@ do
       -Djava.io.tmpdir=*)
         subarg=${arg:17}
         if [ ! -e "$subarg" ]; then
+          echo "Readying $subarg for clulab..."
           mkdir -p "$subarg"
-          cp /etc/profile.d/sbt-README.tmp "${subarg}/README"
+          cp /etc/sbt/sbt-tmp-README.txt "${subarg}/README"
         fi
         ;;
     esac
