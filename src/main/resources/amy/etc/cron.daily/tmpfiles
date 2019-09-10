@@ -1,0 +1,7 @@
+#!/bin/sh -e
+# Remove crud that sbt, scala, and java leave behind.
+find /tmp -maxdepth 1 -name 'sbt*.log'     -type f -mtime +2 -print -delete
+find /tmp -maxdepth 1 -name 'processors-*' -type f -mtime +2 -print -delete
+find /tmp -maxdepth 1 -name 'jna-*'        -type d -mtime +2 -print -exec rm -r '{}' \;
+find /tmp -maxdepth 1 -name 'hsperfdata_*' -type d -mtime +2 -print -exec rm -r '{}' \;
+find /tmp -maxdepth 1 -name 'sbt_*'        -type d -mtime +2 -print -exec rm -r '{}' \;
