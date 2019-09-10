@@ -1,0 +1,3 @@
+# This has been added specifically for the clulab.
+-Djava.io.tmpdir=$SBT_TMP_DIR
+-ivy $SBT_IVY_DIR

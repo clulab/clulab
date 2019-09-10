@@ -1,0 +1,9 @@
+This file and this directory are automatically created when you login
+by /etc/profile.d/sbt-config.sh.  sbt produces many temporary files
+that normally accumulate in /tmp and cause problems with our servers,
+so sbt is configured in /etc/sbtopts to use this directory instead.
+Please remove the directory periodically so that the disk space is
+freed up for others to use.  See also the clulab/clulab wiki page at
+https://github.com/clulab/clulab/wiki/Lab-Servers for more information.
+You can override this behavior by reassigning the environment variable
+$SBT_TMP_DIR.
