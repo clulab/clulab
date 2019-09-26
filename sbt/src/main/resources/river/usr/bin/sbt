@@ -146,6 +146,32 @@ loadConfigFile() {
 #  Pull in the project-level config file, if it exists.
 [[ -f "$sbt_opts_file" ]] && set -- $(loadConfigFile "$sbt_opts_file") "$@"
 
+# Special for clulab create temporary directory and add README files.
+sawIvy=false
+for arg in "$@"
+do
+#  echo "$arg"
+  if [[ $sawIvy == "true" ]]; then
+    sawIvy=false
+    if [ ! -e "$arg" ]; then
+      echo "Readying $arg for clulab..."
+      mkdir -p "$arg"
+      cp /etc/sbt/sbt-ivy-README.txt "${arg}/README"
+    fi
+  else
+    case "$arg" in
+      -ivy) sawIvy=true ;;
+      -Djava.io.tmpdir=*)
+        subarg=${arg:17}
+        if [ ! -e "$subarg" ]; then
+          echo "Readying $subarg for clulab..."
+          mkdir -p "$subarg"
+          cp /etc/sbt/sbt-tmp-README.txt "${subarg}/README"
+        fi
+        ;;
+    esac
+  fi
+done
 
 run "$@"
 
