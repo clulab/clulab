@@ -183,7 +183,7 @@ do
     if [ ! -e "$arg" ]; then
       echo "Readying $arg for clulab..."
       mkdir -p "$arg"
-      cp /usr/share/sbt-launcher-packaging/conf/sbt-ivy-README.txt "${arg}/README"
+      cp /usr/share/sbt/conf/sbt-ivy-README.txt "${arg}/README"
     fi
   else
     case "$arg" in
@@ -193,7 +193,7 @@ do
         if [ ! -e "$subarg" ]; then
           echo "Readying $subarg for clulab..."
           mkdir -p "$subarg"
-          cp /usr/share/sbt-launcher-packaging/conf/sbt-tmp-README.txt "${subarg}/README"
+          cp /usr/share/sbt/conf/sbt-tmp-README.txt "${subarg}/README"
         fi
         ;;
     esac
