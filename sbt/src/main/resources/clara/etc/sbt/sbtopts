@@ -47,3 +47,6 @@
 #
 #-java-home <path>
 
+# This has been added specifically for the clulab.
+-Djava.io.tmpdir=$HOME/sbttmp
+-ivy $HOME/sbtivy
