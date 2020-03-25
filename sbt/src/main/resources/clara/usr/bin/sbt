@@ -173,5 +173,32 @@ loadConfigFile() {
 #  Pull in the project-level java config, if it exists.
 [[ -f ".jvmopts" ]] && export JAVA_OPTS="$JAVA_OPTS $(loadConfigFile .jvmopts)"
 
+# Special for clulab create temporary directory and add README files.
+sawIvy=false
+for arg in "$@"
+do
+#  echo "$arg"
+  if [[ $sawIvy == "true" ]]; then
+    sawIvy=false
+    if [ ! -e "$arg" ]; then
+      echo "Readying $arg for clulab..."
+      mkdir -p "$arg"
+      cp /usr/share/sbt-launcher-packaging/conf/sbt-ivy-README.txt "${arg}/README"
+    fi
+  else
+    case "$arg" in
+      -ivy) sawIvy=true ;;
+      -Djava.io.tmpdir=*)
+        subarg=${arg:17}
+        if [ ! -e "$subarg" ]; then
+          echo "Readying $subarg for clulab..."
+          mkdir -p "$subarg"
+          cp /usr/share/sbt-launcher-packaging/conf/sbt-tmp-README.txt "${subarg}/README"
+        fi
+        ;;
+    esac
+  fi
+done
+
 run "$@"
 
