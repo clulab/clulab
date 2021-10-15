@@ -1,21 +1,20 @@
-All points come from: Pre-train, Prompt, and Predict: A Systematic Survey ofPrompting Methods in Natural Language Processing
-What is prompt tuning?
-Pretrain language models from 2018: pretrain -> fine-tune
-Pretrain language models now: pretrain -> prompt -> fine-tune
-Prompt step: use good prompt to generate more in-domain training samples, like “I love this movie, this movie is ____”. Then the language model will predict some labels, such as “awesome”. Then use this as a new sample for the down-stream task (i.e., I love this movie, this movie is awesome -> Positive). 
-The last step: linking the answer (e.g., “awesome” to the label “positive”) still relies on the template. 
-Problem: the prompt has a huge impact on the output, so it needs to be carefully designed. 
-My own questions:
-It seems that this can only be applied to the scenarios that have been seen by the language model during pre-training. 
-It might be very noisy!
-It is like the distant supervision thing, so either very noisy or lack of diversity?
-Compare prompt turning with distant supervision. 
-Ways to generate prompt:
-Manual design:
-Just try to come up with some templates that are fluent and meaningful. 
-Automatic:
-Discrete:
-Prompt mining: use some rules to extract possible prompt from a large corpus, e.g., Wikipedia. 
+# Pre-train, Prompt, and Predict: A Systematic Survey ofPrompting Methods in Natural Language Processing
+  ## What is prompt tuning?
+    - Pretrain language models from 2018: pretrain -> fine-tune
+    - Pretrain language models now: pretrain -> prompt -> fine-tune
+  ## Prompt step: 
+    - use good prompt to generate more in-domain training samples, like “I love this movie, this movie is ____”. Then the language model will predict some labels, such as “awesome”. Then use this as a new sample for the down-stream task (i.e., I love this movie, this movie is awesome -> Positive). 
+    - The last step: linking the answer (e.g., “awesome” to the label “positive”) still relies on the template. 
+  ## Problem: the prompt has a huge impact on the output, so it needs to be carefully designed. 
+  ## My own questions:
+    - It seems that this can only be applied to the scenarios that have been seen by the language model during pre-training. 
+    - It might be very noisy!
+    - It is like the distant supervision thing, so either very noisy or lack of diversity? Compare prompt turning with distant supervision. 
+  ## Ways to generate prompt:
+    ### Manual design:Just try to come up with some templates that are fluent and meaningful. 
+    ### Automatic:
+      - Discrete:
+        - Prompt mining: use some rules to extract possible prompt from a large corpus, e.g., Wikipedia. 
 Prompt paraphrasing: use paraphrasing techniques to transfer existing prompts to a similar prompt. 
 Gradient-based search: use gradient descent to select the best prompts from a pool. 
 Prompt generation: e.g., use T5 to generate prompts. 
