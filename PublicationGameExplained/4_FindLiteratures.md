@@ -3,17 +3,17 @@
    - For 90% of your questions (e.g., what types of information does the word embeddings capture), there are already papers about it. For the rest 10%, it might be good research topic of your paper. 
 
 # Passive literature feeding:
-   - For many times, do you not look for papers, but they are fed to you, these include:
+   - For many times, you do not look for papers, but they are fed to you, these include:
    - Subscribe your research topic in google scholar and arxiv. There will be literatures fed to you.
    - Follow the big names on twiiter.
-   - Your collegues might also feed papers. 
+   - Your collegues might also share papers. 
 
 # To get familiar with the hottest research topics:
    - Look at the tutorials of the top conferences (ICLR, ACL, EMNLP, NAACL, COLING, IJCAI, AAAI, SIGIR).
-   - Look for the blogs (medium, towardsdatascience) or discussions quora/reddit/twitter with some keywords (e.g., transformers).
+   - Look for the blogs (medium, towardsdatascience) or discussions (quora/reddit/twitter) with some keywords (e.g., transformers).
    - Look for review papers. 
    - Go though the publication list of the top NLP conferences (ACL, EMNLP, NAACL, COLING)
-   - Note that when going through the publications lists, most of the papers are not very related. Usually only look at the papers that (1) are directly in your field of research (2) are highly likely to be used to your research. These two criteria should filter out more than 95% papers. E.g., if a conference accept 600 papers, then more than 570 papers should be filtered out. 
+   - Note that when going through the publications lists, most of the papers are not very related. Usually only look at the papers that (1) are directly in your field of research (2) are highly likely to be used to your research. These two criteria should filter out more than 95% papers. E.g., if a conference accept 600 papers, then more than 570 papers should be directly filtered out. 
 
 # To look for papers of a particular topic:
    - Start with the keywords of that topic. E.g., "transformers", "multi-hop reasoning", "commonsense reasoning", etc. 
@@ -25,3 +25,4 @@
 
 # The most effective way to catch up with the research in your area:
    - Follow the work of the groups that work in the field. 
+   - How to know which groups: see the techniques in "To look for papers of a particular topic".
