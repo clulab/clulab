@@ -14,6 +14,7 @@
    - Look for review papers. 
    - Go though the publication list of the top NLP conferences (ACL, EMNLP, NAACL, COLING)
    - Note that when going through the publications lists, most of the papers are not very related. Usually only look at the papers that (1) are directly in your field of research (2) are highly likely to be used to your research. These two criteria should filter out more than 95% papers. E.g., if a conference accept 600 papers, then more than 570 papers should be directly filtered out. 
+   - **Assignment:** by looking at the tutorials in 2010 and 2020, what techinqiues are disappearing and what are emerging?
 
 # To look for papers of a particular topic:
    - Start with the keywords of that topic. E.g., "transformers", "multi-hop reasoning", "commonsense reasoning", etc. 
@@ -22,7 +23,9 @@
    - So, for each article you get, do the following (1) look at the papers it cites (2) look at the papers that cite it (3) look at the paper's author's other papers. 
    - Repeat the previous step for 2 or 3 hops, then the literature review is pretty exhaustive. 
    - In the citations, usually only 20%-30% are highly related citations. For example, a paper is cited 20 times, so only about 4-6 papers are highly related. So we don't have to go through all the papers really carefully. 
+   - **Assignment:** List the papers of one research topic in your area. 
 
 # The most effective way to catch up with the research in your area:
    - Follow the work of the groups that work in the field. 
    - How to know which groups: see the techniques in "To look for papers of a particular topic".
+   - **Assignment:** List 5 the most related research groups in your area. 
