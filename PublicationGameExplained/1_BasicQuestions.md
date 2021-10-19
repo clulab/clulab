@@ -1,4 +1,4 @@
-This pages contains the answers to the most basic NLP questions. There are also "assignments" that you should do to make sure you truly understand the answers to the questions. 
+This page contains the answers to the most basic NLP questions. There are also "assignments" that you should do to make sure you truly understand the answers to the questions. 
 
 1. What are the types research papers in engineering, science and particularly computer science? 
 
